@@ -1,6 +1,10 @@
 # Macify Design App Builder Prompt
 
-Build this as a usable web tool/workspace product with Macify Design.
+Use this prompt only when the requested product is a web tool/workspace workflow: users create, edit, manage, publish, configure, analyze, monitor, review, automate, debug, generate, preview, or control objects.
+
+If the request is primarily a marketing page, passive reading site, blog, portfolio, ecommerce storefront, game, or content showcase, do not apply Macify Design unless the user explicitly asks for a Mac-like tool interface.
+
+Build qualifying requests as usable web tool/workspace products with Macify Design.
 
 Do not make a marketing page or passive mockup. Create an interactive product surface with realistic sample data, primary workflows, real states, and responsive behavior.
 
