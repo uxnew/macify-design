@@ -6,6 +6,8 @@ Build the Mac-like effect through semantic tokens and material layers. Do not re
 
 Define light and dark values together:
 
+The palette below is an example, not a fixed theme. Do not copy it unchanged when product context, brand, or domain suggests a better accent, density, or material contrast. Keep the semantic token structure stable while adapting the values.
+
 ```css
 :root {
   color-scheme: light;
@@ -61,6 +63,17 @@ Define light and dark values together:
 ```
 
 Adapt values to the product's brand and existing design system. Keep semantic names stable.
+
+## Domain Variants
+
+Use product domain to tune the skin so every output does not become the same gray-blue shell:
+
+- Publishing/tutorial tools: favor calm content surfaces, slightly warmer content material, clear draft/published/scheduled status colors, and a restrained blue/green accent.
+- AI workbenches: favor cooler chrome, stronger run/status contrast, model/settings inspector clarity, and blue/cyan or violet accents only when they do not dominate the UI.
+- Analytics/admin consoles: favor neutral dense tables, clear separators, low-noise chart surfaces, and blue/teal accents for selected views and filters.
+- Developer/monitoring tools: favor graphite or neutral dark surfaces, precise monospace regions, green/amber/red status tokens, and high-contrast log/table states.
+
+Never change the product's brand just to make it look more Mac-like. Use Mac-like material and layout as a skin layer over the product's actual identity.
 
 ## Material Layers
 
