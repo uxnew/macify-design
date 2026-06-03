@@ -1,6 +1,6 @@
 ---
 name: macify-design
-description: Mac-like design rules for web tool and workspace products. Use when designing or implementing web apps whose primary workflow is creating, editing, managing, publishing, configuring, analyzing, monitoring, reviewing, automating, debugging, generating, previewing, or controlling objects, including admin systems, dashboards, editors, AI tools, CMS/CRM, tutorial/documentation publishing managers, content operations tools, developer tools, internal tools, and single-file HTML prototypes. Use for Chinese requests such as Mac风格, 类Mac, 工具类Web产品, 管理后台, 工作台, 发布系统, 教程管理, AI工具. Do not use by default for marketing sites, brand homepages, blogs, passive reading documentation, article/video libraries, ecommerce storefronts, games, or products with a stronger requested design system.
+description: Mac-like design rules for operational web tool and workspace products. Use when designing or implementing web apps whose primary workflow is creating, editing, managing, publishing, configuring, analyzing, monitoring, reviewing, automating, debugging, generating, previewing, or controlling objects, including admin systems, dashboards, editors, AI tools, CMS/CRM, tutorial/documentation publishing managers, content operations tools, developer tools, internal tools, and single-file HTML prototypes. Use when the user explicitly asks for Mac-like, Mac style, macOS-inspired, windowed workbench, Mac风格, 类Mac, 工具类Web产品, 管理后台, 工作台, 发布系统, 教程管理, or AI工具.
 ---
 
 # Macify Design
