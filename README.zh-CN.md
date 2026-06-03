@@ -46,9 +46,11 @@ macify-design/
 
 ## Codex 安装
 
-把 skill 文件夹复制到 Codex skills 目录：
+先 clone 仓库，再把 skill 文件夹复制到 Codex skills 目录：
 
 ```bash
+git clone https://github.com/uxnew/macify-design.git
+cd macify-design
 mkdir -p ~/.codex/skills
 cp -R skills/macify-design ~/.codex/skills/macify-design
 ```
@@ -66,6 +68,18 @@ cp -R skills/macify-design ~/.codex/skills/macify-design
 - `app-builder-prompt.md`：v0、Lovable、Bolt、Replit Agent 等 prompt-to-app 工具
 
 这些 adapter 是可复制的指令，不是自动安装器。核心规则以 `skills/macify-design/SKILL.md` 和 references 为准。
+
+常见放置方式：
+
+| 工具 / 宿主 | 使用方式 |
+| --- | --- |
+| ChatGPT Projects / Gemini / 通用 AI 助手 | 把 `adapters/generic-system-prompt.md` 粘到项目指令或 system instructions。 |
+| Cursor / Windsurf / Cline / Roo / Continue | 把 `adapters/editor-agent-instructions.md` 放进对应工具的 project rules 或 custom instructions。 |
+| Claude Projects / Claude Code | 把 `adapters/claude-instructions.md` 粘到项目指令；如果你的 agent 约定使用 `CLAUDE.md`，也可以放进去。 |
+| VS Code / GitHub Copilot | 把 `adapters/github-copilot-instructions.md` 放进 `.github/copilot-instructions.md` 或工作区 Copilot instructions。 |
+| v0 / Lovable / Bolt / Replit Agent | 把 `adapters/app-builder-prompt.md` 和产品需求一起粘进去。 |
+
+如果不确定某个需求是否应该触发，先看 `examples/decision-cases.md`。
 
 ## 核心原则
 
