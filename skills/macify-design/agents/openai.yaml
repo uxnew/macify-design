@@ -1,0 +1,4 @@
+interface:
+  display_name: "Macify Design"
+  short_description: "Design Mac-like web tool products."
+  default_prompt: "Use $macify-design to design a Mac-like web tool product workspace with light/dark skin, responsive mobile app shell, and real product states."
