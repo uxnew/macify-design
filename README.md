@@ -33,9 +33,11 @@ macify-design/
 
 ## Install For Codex
 
-Copy the skill folder into your Codex skills directory:
+Clone the repository, then copy the skill folder into your Codex skills directory:
 
 ```bash
+git clone https://github.com/uxnew/macify-design.git
+cd macify-design
 mkdir -p ~/.codex/skills
 cp -R skills/macify-design ~/.codex/skills/macify-design
 ```
@@ -53,6 +55,18 @@ Use the files in `adapters/`:
 - `app-builder-prompt.md`: v0, Lovable, Bolt, Replit Agent, and prompt-to-app tools
 
 These adapters are instruction files, not automatic installers. The canonical rules live in `skills/macify-design/SKILL.md` and its references.
+
+Common placement options:
+
+| Tool or host | How to use |
+| --- | --- |
+| ChatGPT Projects / Gemini / generic assistants | Paste `adapters/generic-system-prompt.md` into project or system instructions. |
+| Cursor / Windsurf / Cline / Roo / Continue | Copy `adapters/editor-agent-instructions.md` into the tool's project rules or custom instructions file. |
+| Claude Projects / Claude Code | Paste `adapters/claude-instructions.md` into project instructions, or copy it into `CLAUDE.md` when that is your agent convention. |
+| VS Code / GitHub Copilot | Copy `adapters/github-copilot-instructions.md` into `.github/copilot-instructions.md` or the workspace's Copilot instructions surface. |
+| v0 / Lovable / Bolt / Replit Agent | Paste `adapters/app-builder-prompt.md` together with the product request. |
+
+Use `examples/decision-cases.md` to check whether a request should trigger the skill before pasting an adapter into a long-lived project.
 
 ## Core Rule
 
